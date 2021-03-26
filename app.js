@@ -6,6 +6,7 @@ const resultsText = document.querySelector('#results')
 const winsText = document.querySelector('#wins')
 const totalText = document.querySelector('#total')
 const drawsText = document.querySelector('#draws')
+const lossesText = document.querySelector('#losses')
 const rock = document.querySelector('#rock').value
 const paper = document.querySelector('#paper').value
 const scissors = document.querySelector('#scissors').value
@@ -16,6 +17,7 @@ const scissors = document.querySelector('#scissors').value
 let wins = 0;
 let total =0;
 let draws =0;
+let losses =0;
 
 
 
@@ -28,6 +30,23 @@ playButton.addEventListener ('click',() => {
     
     const results = didUserWin(player, computer)
     console.log(results);
+
+    if (results === 'draw') {
+        draws++
+        drawsText.textContent = `${draws} Draws`
+    }
+
+    if (results === 'win') {
+        wins++
+        winsText.textContent = `${wins} Wins`
+    }
+
+    if (results === 'loss') {
+        losses++
+        lossesText.textContent = `${losses} losses`
+    }
+
+
 
 
 
