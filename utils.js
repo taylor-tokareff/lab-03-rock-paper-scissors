@@ -21,3 +21,15 @@ export function didUserWin(player, computer) {
         return 'win'}
 
     }
+
+
+    export function randomThrow() {
+
+        const throwNumber = Math.ceil(Math.random() * 3);
+
+        if (throwNumber === 1) return 'rock';
+
+        if (throwNumber === 2) return 'paper';
+
+        if (throwNumber === 3) return 'scissors';
+    }
