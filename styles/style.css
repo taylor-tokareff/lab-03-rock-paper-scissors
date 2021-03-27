@@ -18,8 +18,10 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'New Rocker', cursive;
+    background-color: black;
+    color: rgb(86, 143, 1);
+    font-size: 1.8rem;
 }
 
 main {
@@ -62,7 +64,7 @@ footer {
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 3.8rem;
     font-weight: bold;
 }
 
@@ -111,3 +113,38 @@ footer {
     }
 
   }
+
+  #the-rock{
+    display: none;
+}
+
+#paper-jet{
+    display: none;
+}
+
+#med{
+    display: none;
+}
+
+#input-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+label{
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+.steve{
+    width: 53%;
+}
+
+p{
+    text-align: center;
+    
+}

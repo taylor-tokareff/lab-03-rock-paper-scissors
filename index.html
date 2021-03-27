@@ -9,45 +9,65 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     
     <main>
-        <section class="main-section">
+        <section class="main-section"></section>
             
             <h2>
-                Welcome to Alchemy Bootstrap!
+                Rock Paper scissors
             </h2>
 
             <p>
-                Lorem ipsum dolor sit
+                Rules are simple, choose either rock, paper or scissors by clicking the images below.
+                When your press play the computer will randomly choose rock, paper or scissors.
+                Rock beats scissors, paper beats rock, scissors beats paper.
+                If both you and the computer choose the same variable the game will result in a draw.
+                Good luck!
             </p>
 
+            </section>
+
+            <section id="input-area">
+
             <label>
+                <img src="img/rock.PNG" alt="rock" class="steve">
                 <input type="radio" name="choice" value="rock" id="rock">
-                <img src="img/rock.PNG" alt="rock"
-                width= "100px"
-                height="100px">
+                
             </label>
 
             <label>
+                <img src="img/paper.PNG" alt="paper" class="steve">
                 <input type="radio" name="choice" value="paper" id="paper">
-                <img src="img/paper.PNG" alt="paper"
-                width= "100px"
-                height="100px">
+                
             </label>
 
             <label>
+                <img src="img/cutters.PNG" alt='scissors' class="steve">
                 <input type="radio" name="choice" value="scissors" id="scissors">
-                <img src="img/cutters.PNG" alt='scissors'
-                width= "100px"
-                height="100px">
+                
             </label>
 
-            
+        </section>
+
+        <section id='results-area'>
+
+            <div id='joe'></div>
             <div id='results'></div>
+            <img src="img/the rock.PNG" alt="the rock" id='the-rock'
+            width="200px"
+            >
+            <img src="img/paper jet.png" alt='paper jet' id='paper-jet'
+            width="200px">
+            <img src="img/med.PNG" alt='medevil scissors' id='med'
+            width="200px"
+            height="250px">
+
 
             <button id=play>play</button>
 
@@ -56,24 +76,26 @@
             <div id='draws'></div>
             <div id='total'></div>
 
-
-
-
-
-
-
-
-
-
-
-
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        
     
     
     </main>
 
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2021 BMF Productions</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
